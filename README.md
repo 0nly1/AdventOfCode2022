@@ -3,7 +3,7 @@
 My attempts to solve the puzzles of [Advent of Code](https://adventofcode.com)!
 
 Streak:
-- [ ] Day 1
+- [x] Day 1
 - [ ] Day 2
 - [ ] Day 3
 - [ ] Day 4
