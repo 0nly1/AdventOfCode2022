@@ -10,14 +10,17 @@ fn main() {
 
     for item in list { 
         if item.is_empty() {
-            let max = max_arr[0];
-            
-            if max < current_elf { 
+            if max_arr[0] <= current_elf { 
                 max_arr[2] = max_arr[1]; 
                 max_arr[1] = max_arr[0];
                 max_arr[0] = current_elf;
-                println!("New max: {}", current_elf);
+                println!("Current max: {}, {}, {}", max_arr[0], max_arr[1], max_arr[2]);
             } 
+            else if max_arr[1] <= current_elf {
+                max_arr[2] = max_arr[1];
+                max_arr[1] = current_elf;
+                println!("Current max: {}, {}, {}", max_arr[0], max_arr[1], max_arr[2]);
+            }
 
             current_elf = 0;
             continue;
